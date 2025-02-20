@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+body{
+    background-color: rgba(63, 63, 63, 0.562);
+}
+
+.main-container{
+    max-width: 1080px;
+    padding: 64px;
+    height: 100vh;
+    margin: auto;
+    background-color: #b2b2b298;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.input-container{
+    flex-basis: 100%;
+}
+
+#username{
+    padding: 5px 10px;
+    outline: none;
+    color: rgb(66, 66, 66);
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 8px;
+}
+
+#review{
+    padding: 5px 10px;
+    resize: none;
+    outline: none;
+    color: rgb(66, 66, 66);
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 8px;
+}
+
+.star-icon-container i{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#sumbit{
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: royalblue;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.user-img {
+    height: 30px;
+    width: 30px;
+    margin-block-end: 5px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-basis: 50%;
+}
+
+.user-container{
+    font-size: 0.9rem;
+    color: rgba(71, 71, 71, 0.8);
+}
+
+.rating{
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.solid-yellow{
+    color: rgba(255, 255, 0, 0.8);
+}
+
+li{
+    background-color: rgba(120, 120, 120, 0.6);
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 300px;
+    height: fit-content;
+    color: rgba(71, 71, 71, 0.8);
+}
+
+.logo{
+    color: rgba(47, 81, 183, 0.66);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+}

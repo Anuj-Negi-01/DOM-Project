@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container flex header">
+            <img src="./Component21.svg" alt="calculator-img">
+            <div>
+                <h1>BMI Calculator</h1>
+                <h3>Body Mass Index</h3>
+            </div>
+        </div>
+    </nav>
+    <main class="container flex main-content">
+        <div class="input-container">
+            <div class="gender">
+                <p class="head-text">GENDER</p>
+                <span class="gender-text onfocus" id="male">Male</span>
+                <span class="gender-text" id="female">Female</span>
+            </div>
+            <div class="age">
+                <p class="head-text">AGE</p>
+                <div class="input-age">
+                    <input type="text" id="age-input" class="input-box">
+                    <span class="age-text">Years</span>
+                </div>
+                <span class="note">
+                    Between 2 years to 120 years</span>
+            </div>
+            <div class="height">
+                <input type="text" name="height" id="height-input" placeholder="CM" class="input-box input-age">
+            </div>
+            <div class="weight input-age">
+                <input type="text" id="weight-input" class="input-box">
+                <span class="age-text">in Kgs</span>
+            </div>
+            <div class="btn">
+                <button id="btn">Calculate</button>
+            </div>
+        </div>
+        <div class="calculated-bmi flex" id="output-container">
+            <h4 class="heading-text">Your BMI is</h4>
+            <p class="calc-value" id="resultVal">_ _</p>
+            <p class="note last-note">Healthy BMI range: 18.5 kg/m2 - 25 kg/m2</p>
+            <span class="suggestion hidden" id="suggestion"></span>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

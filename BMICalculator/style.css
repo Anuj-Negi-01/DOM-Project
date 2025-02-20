@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Mulish", serif;
+}
+
+body{
+    background-color: rgb(186, 186, 176);
+}
+
+.container{
+    max-width: 1080px;
+    padding: 40px;
+    margin-inline: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: centers;
+}
+
+.header{
+    gap: 30px;
+}
+
+h1, h3, h4{
+    color: #ae2b30;
+}
+
+h1{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.main-content{
+    padding: 20px 35px;
+    border: 2px solid rgb(250, 130, 44);
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.input-container{
+    width: 60%;
+}
+.head-text{
+    color: #474747;
+    font-size: 0.9rem;
+    margin-bottom: 18px;
+}
+.gender{
+    margin-bottom: 30px;
+}
+.gender-text{
+    background-color: #fff;
+    padding: 8px 25px;
+    color: #5e5e5e;
+    border-radius: 8px;
+    margin-inline-end: 10px;
+}
+
+.onfocus{
+    border: 1.8px solid rgb(250, 130, 44);
+    font-weight: 700;
+}
+
+.input-box{
+    border: none;
+    outline: none;
+    padding-inline: 10px;
+    font-size: 0.9rem;
+}
+
+.input-age{
+    background-color: #fff;
+    width: fit-content;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.age-text{
+    color: #5e5e5e;
+}
+
+.note{
+    color: #474747;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.height, .age, .weight{
+    margin-bottom: 18px;
+}
+
+button{
+    background-color: orangered;
+    border: none;
+    outline: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+
+.calculated-bmi{
+    background-color: rgba(123, 123, 123, 0.621);
+    height: fit-content;
+    padding: 30px 20px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading-text{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.calc-value{
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+.last-note{
+    color: #ae2b30;
+}
+
+.run{
+    color: #ff0000;
+}
+
+.great-shape{
+    color: #096b02;
+}
+
+.eat{
+    color: #b93131;
+}
+
+.overweight{
+    background-color: #ff0000;
+    opacity: 50%;
+}
+
+.healthy{
+    background-color: #096b02;
+    opacity: 50%; 
+}
+
+.underweight{
+    background-color: #b93131;
+    opacity: 50%; 
+}
+
+.suggestion {
+    margin-block: 10px;
+    font-size: 1.5rem;
+}
+
+.hidden{
+    display: none;
+}
