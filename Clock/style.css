@@ -78,7 +78,6 @@ h2 {
   transform-origin: bottom;
   border-radius: 4px;
   transform: translateX(-50%) rotate(0deg);
-  /* transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44); */
 }
 
 .hour {
