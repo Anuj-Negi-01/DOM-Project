@@ -26,7 +26,7 @@ setInterval(() => {
 
     const hourRotation = (hours * 30) + (mins / 2)
     const minRotation = (mins * 6) + ( sec / 10)
-    const secRotation = sec * 6
+    const secRotation = 6 * sec
 
     hourHand.style.transform = `rotate(${hourRotation}deg)`
     minHand.style.transform = `rotate(${minRotation}deg)`
