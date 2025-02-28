@@ -77,7 +77,6 @@ h2 {
   bottom: 50%;
   transform-origin: bottom;
   border-radius: 4px;
-  transform: translateX(-50%) rotate(0deg);
 }
 
 .hour {

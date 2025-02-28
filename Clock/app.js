@@ -17,16 +17,16 @@ for (let i = 1; i <= 12; i++) {
     clock.appendChild(number);
   }
 
-  
-setInterval(() => {
+function displayClock(){
     const now = new Date()
     const hours = now.getHours()
     const mins = now.getMinutes()
     const sec = now.getSeconds()
 
     const hourRotation = (hours * 30) + (mins / 2) 
-    const minRotation = (mins * 6) + ( sec / 10)
-    const secRotation = 6 * sec
+    const minRotation = (mins * 6) + ( sec / 10) 
+    const secRotation = 6 * sec 
+    if(secRotation === 360) secRotation = 0
 
     hourHand.style.transform = `rotate(${hourRotation}deg)`
     minHand.style.transform = `rotate(${minRotation}deg)`
@@ -37,6 +37,8 @@ setInterval(() => {
     const secInsString = String(now.getSeconds()).padStart('2', '0')
     digitalClock.textContent = `${hoursInString}:${MinsInString}:${secInsString}`
     displayDate.textContent = `${now.toDateString()}`
+}
+setInterval(displayClock, 1000)
 
-}, 1000)
+document.addEventListener('DOMContentLoaded', displayClock)
 
