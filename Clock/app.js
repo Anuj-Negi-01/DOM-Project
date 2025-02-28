@@ -24,7 +24,7 @@ setInterval(() => {
     const mins = now.getMinutes()
     const sec = now.getSeconds()
 
-    const hourRotation = (hours * 30) + (mins / 2)
+    const hourRotation = (hours * 30) + (mins / 2) 
     const minRotation = (mins * 6) + ( sec / 10)
     const secRotation = 6 * sec
 
