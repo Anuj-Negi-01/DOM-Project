@@ -13,15 +13,20 @@ let turnofO = false
 const cells = document.querySelectorAll('.cell')
 const winnerBox = document.querySelector('.winner-box')
 const replayBtn = winnerBox.children[1]
+const clearBtn = document.querySelector('.clear-btn')
 
-replayBtn.addEventListener('click', () => {
+function clearBoard(){
     winnerBox.classList.add('hidden')
     cells.forEach((cell) => {
         cell.innerText = ''
         cell.style.pointerEvents = ""
         turnofO = false
     })
-})
+}
+
+clearBtn.addEventListener('click', clearBoard)
+
+replayBtn.addEventListener('click', clearBoard)
 
 cells.forEach((cell) => {
     cell.addEventListener('click', () => {
