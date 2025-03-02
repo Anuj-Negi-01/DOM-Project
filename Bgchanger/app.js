@@ -18,7 +18,6 @@ function createButton () {
 
     button.addEventListener('click', () => {
         if(document.body.style.backgroundColor !== 'rgb(255, 255, 255)'){
-            console.log('aaya hu');
             document.body.style.backgroundColor = 'rgb(255, 255, 255)' 
         }
         else document.body.style.backgroundColor = `${button.innerText}`
