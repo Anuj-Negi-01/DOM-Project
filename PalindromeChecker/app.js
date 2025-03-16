@@ -20,7 +20,7 @@ checkBtn.addEventListener("click", () => {
     e--;
     s++;
   }
-  console.log(result);
+  result.classList.remove("error");
   result.classList.add("success");
   result.innerText = "String is palindrome";
 });
