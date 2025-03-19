@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  font-family: Arial, sans-serif;
+}
+.container {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.dice {
+  font-size: 80px;
+  margin: 20px 0;
+  transition: transform 0.5s ease;
+}
+.rolling {
+  transform: rotate(360deg);
+}
+.roll-btn {
+  background: #ff7675;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.roll-btn:hover {
+  background: #d63031;
+}
+
+.para {
+  color: rgba(63, 63, 63, 0.79);
+  font-size: 0.95rem;
+}
